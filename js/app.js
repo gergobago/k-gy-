@@ -13,7 +13,7 @@ let aktkigyo = [2,1,0]
 
 let irany = 1
 let pont = 0
-let sebesseg = 0.9
+let sebesseg = 0.8
 
 let idozetes = 0
 let intervallum = 0
