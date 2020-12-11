@@ -127,9 +127,12 @@ function resetGame()
 {
 
 console.log('resetGame()')
+
 clearInterval(intervallum)
+
 negyzetek[almaIndex].classList.remove('alma')
-negyzetek[aktkigyo].classList.remove('kigyo')
+
+negyzetek[aktkigyo[0]].classList.remove('kigyo')
 
 }
 
