@@ -132,7 +132,7 @@ clearInterval(intervallum)
 
 negyzetek[almaIndex].classList.remove('alma')
 
-negyzetek[aktkigyo[0,1,2]].classList.remove('kigyo')
+negyzetek[aktkigyo[2,1,0]].classList.remove('kigyo')
 
 }
 
