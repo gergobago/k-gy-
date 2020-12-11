@@ -132,7 +132,9 @@ clearInterval(intervallum)
 
 negyzetek[almaIndex].classList.remove('alma')
 
-negyzetek[aktkigyo[2,1,0]].classList.remove('kigyo')
+aktkigyo.forEach(index=>negyzetek[index].classList.remove('kigyo'))
+
+pont = 0
 
 }
 
