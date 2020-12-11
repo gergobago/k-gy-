@@ -5,6 +5,7 @@ const negyzetek = document.querySelectorAll('.racs div')
 const eredmeny = document.querySelector('span')
 const inditoGomb = document.querySelector('.start')
 const stopGomb = document.querySelector('.stop')
+const ujraGomb = document.querySelector('.Ujra')
 
 const szelesseg = 10
 let aktindex = 0
@@ -122,6 +123,16 @@ function stopGame()
     clearInterval(intervallum)
 }
 
+function resetGame()
+{
+
+console.log('resetGame()')
+clearInterval(intervallum)
+negyzetek[almaIndex].classList.remove('alma')
+negyzetek[aktkigyo].classList.remove('kigyo')
+
+}
+
 function control(e)
 {
     if(e.keyCode === 39){
@@ -155,4 +166,6 @@ inditoGomb.addEventListener('click',startGame)
 //
 /////////////////////////
 stopGomb.addEventListener('click',stopGame)
+
+ujraGomb.addEventListener('click',resetGame)
 });
