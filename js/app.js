@@ -164,12 +164,11 @@ function control(e)
 
 }
 
-function gombfel(f)
-{
-    if(f.keycode === 38)
-    (
-        irany = -szelesseg
-    )
+function simulateArrowKeyPress(keyCode) {
+    const event = new KeyboardEvent("keydown", {
+        key: keyCode,
+    });
+    document.dispatchEvent(event);
 }
 
 document.addEventListener('keyup',control)
@@ -186,5 +185,15 @@ stopGomb.addEventListener('click',stopGame)
 
 ujraGomb.addEventListener('click',resetGame)
 
-felgomb.addEventListener('click',gombfel);
+felgomb.addEventListener('click',function () {
+    simulateArrowKeyPress("ArrowUp"););
+
+jobbgomb.addEventListener('click',function () {
+    simulateArrowKeyPress("ArrowRight"););
+
+balgomb.addEventListener('click',function () {
+    simulateArrowKeyPress("ArrowLeft"););
+
+legomb.addEventListener('click',function () {
+    simulateArrowKeyPress("ArrowDown"););
 });
