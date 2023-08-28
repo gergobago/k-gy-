@@ -133,12 +133,14 @@ function resetGame()
 console.log('resetGame()')
 
 clearInterval(intervallum)
-
+    
+pont = 0
+    
 negyzetek[almaIndex].classList.remove('alma')
 
 aktkigyo.forEach(index=>negyzetek[index].classList.remove('kigyo'))
 
-pont = 0
+
 
 }
 
