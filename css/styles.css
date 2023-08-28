@@ -23,7 +23,7 @@ border-radius: 13px;
     border-radius: 13px;
 }
 
-.fel{
+#fel{
        position: absolute;
        top: 35px;
        left: 220px;
@@ -31,7 +31,7 @@ border-radius: 13px;
        height: 40px;   
 }
 
-.jobb{
+#jobb{
        position: absolute;
        top: 80px;
        left: 220px;
@@ -39,7 +39,7 @@ border-radius: 13px;
        height: 40px;   
 }
 
-.bal{
+#bal{
        position: absolute;
        top: 125px;
        left: 220px;
@@ -47,7 +47,7 @@ border-radius: 13px;
        height: 40px;   
 }
 
-.le{
+#le{
        position: absolute;
        top: 170px;
        left: 220px;
