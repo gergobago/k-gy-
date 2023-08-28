@@ -166,8 +166,26 @@ function control(e)
 
 function gombfel(f)
 {
-    fel.keyCode===38;
+    f.keyCode===38;
     irany = -szelesseg;
+}
+
+function gombjobb(j)
+{
+    j.keyCode===39;
+    irany = 1;
+}
+
+function gombbal(b)
+{
+    b.keyCode===37;
+    irany = -1;
+}
+
+function gomble(l)
+{
+    l.keyCode===40;
+    irany = +szelesseg;
 }
 
 
@@ -187,9 +205,9 @@ ujraGomb.addEventListener('click',resetGame)
 
 felgomb.addEventListener("click", gombfel);
 
-jobbgomb.addEventListener("click",);
+jobbgomb.addEventListener("click", gombjobb);
 
-balgomb.addEventListener("click", );
+balgomb.addEventListener("click", gombbal);
 
-legomb.addEventListener("click", );
+legomb.addEventListener("click", gomble);
 });
