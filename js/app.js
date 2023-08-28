@@ -197,7 +197,7 @@ ujraGomb.addEventListener('click',resetGame)
         simulateArrowKeyPress("ArrowLeft");
     });
 
-    legomb.addEventListener"click", function () {
+    legomb.addEventListener("click", function () {
         simulateArrowKeyPress("ArrowDown");
     });
 });
