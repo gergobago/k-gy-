@@ -6,10 +6,10 @@ const eredmeny = document.querySelector('span')
 const inditoGomb = document.querySelector('.start')
 const stopGomb = document.querySelector('.stop')
 const ujraGomb = document.querySelector('.Ujra')
-const felgomb = document.querySelector('.fel');
-const jobbgomb = document.querySelector('.jobb');
-const balgomb = document.querySelector('.bal');
-const legomb = document.querySelector('.le');
+const felgomb = document.getElementById("fel");
+const jobbgomb = document.getElementById("jobb");
+const balgomb = document.getElementById("bal");
+const legomb = document.getElementById("le");
 
 const szelesseg = 10
 let aktindex = 0
@@ -185,15 +185,15 @@ stopGomb.addEventListener('click',stopGame)
 
 ujraGomb.addEventListener('click',resetGame)
 
-felgomb.addEventListener('click',function () {
+felgomb.addEventListener("click", function () {
     simulateArrowKeyPress("ArrowUp");
 
-jobbgomb.addEventListener('click',function () {
+jobbgomb.addEventListener("click", function () {
     simulateArrowKeyPress("ArrowRight");
 
-balgomb.addEventListener('click',function () {
+balgomb.addEventListener("click", function () {
     simulateArrowKeyPress("ArrowLeft");
 
-legomb.addEventListener('click',function () {
+legomb.addEventListener("click", function () {
     simulateArrowKeyPress("ArrowDown");
 });
