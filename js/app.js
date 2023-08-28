@@ -6,6 +6,10 @@ const eredmeny = document.querySelector('span')
 const inditoGomb = document.querySelector('.start')
 const stopGomb = document.querySelector('.stop')
 const ujraGomb = document.querySelector('.Ujra')
+const felgomb = document.querySelector('.fel');
+const jobbgomb = document.querySelector('.jobb');
+const balgomb = document.querySelector('.bal');
+const legomb = document.querySelector('.le');
 
 const szelesseg = 10
 let aktindex = 0
@@ -160,6 +164,14 @@ function control(e)
 
 }
 
+function gombfel(f)
+{
+    if(f.keycode === 38)
+    (
+        irany = -szelesseg
+    )
+}
+
 document.addEventListener('keyup',control)
 
 /////////////////////////
@@ -173,4 +185,6 @@ inditoGomb.addEventListener('click',startGame)
 stopGomb.addEventListener('click',stopGame)
 
 ujraGomb.addEventListener('click',resetGame)
+
+felgomb.addEventListener('click',gombfel);
 });
