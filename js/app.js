@@ -164,28 +164,12 @@ function control(e)
 
 }
 
-function simulateArrowKeyPress(keyCode) {
-    const event = new KeyboardEvent("keydown", {
-        key: keyCode,
-    });
-    if(keyCode === "ArrowRight"){
-        irany = 1
-    }
-    else if(keyCode === "ArrowLeft")
-    {
-        irany = -1
-    }
-    else if(keyCode === "ArrowUp")
-    {
-        irany = -szelesseg
-    }
-    else if(keyCode === "ArrowDown")
-    {
-        irany = +szelesseg
-    }
-
-    document.dispatchEvent(event);
+function gombfel(f)
+{
+    fel.keyCode===38;
+    irany = -szelesseg;
 }
+
 
 document.addEventListener('keyup',control)
 
@@ -201,11 +185,11 @@ stopGomb.addEventListener('click',stopGame)
 
 ujraGomb.addEventListener('click',resetGame)
 
-felgomb.addEventListener("click", simulateArrowKeyPress("ArrowUp"));
+felgomb.addEventListener("click", gombfel);
 
-jobbgomb.addEventListener("click", simulateArrowKeyPress("ArrowRight"));
+jobbgomb.addEventListener("click",);
 
-balgomb.addEventListener("click", simulateArrowKeyPress("ArrowLeft"));
+balgomb.addEventListener("click", );
 
-egomb.addEventListener("click", simulateArrowKeyPress("ArrowDown"));
+legomb.addEventListener("click", );
 });
