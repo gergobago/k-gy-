@@ -185,15 +185,15 @@ stopGomb.addEventListener('click',stopGame)
 
 ujraGomb.addEventListener('click',resetGame)
 
-felgomb.addEventListener("click", function () {
+felgomb.addEventListener("click", function () 
     simulateArrowKeyPress("ArrowUp");
 
-jobbgomb.addEventListener("click", function () {
+jobbgomb.addEventListener("click", function () 
     simulateArrowKeyPress("ArrowRight");
 
-balgomb.addEventListener("click", function () {
+balgomb.addEventListener("click", function () 
     simulateArrowKeyPress("ArrowLeft");
 
-legomb.addEventListener("click", function () {
+legomb.addEventListener("click", function () 
     simulateArrowKeyPress("ArrowDown");
 });
